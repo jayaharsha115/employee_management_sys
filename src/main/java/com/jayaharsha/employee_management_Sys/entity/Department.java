@@ -20,7 +20,7 @@ public class Department {
     private String departmentName;
     private String location;
 
-    @OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "department")
     @JsonIgnore
     private List<Employee> employees;
 }
